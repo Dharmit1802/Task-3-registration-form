@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="registration-form">
+    <form id="registrationForm" onsubmit="return false;">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="imagelink">Image Link:</label>
+        <input type="imagelink" id="imagelink" name="imagelink">
+      </div>
+      <div>
+        <label for="websitelink">website Link:</label>
+        <input type="websitelink" id="websitelink" name="websitelink">
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female
+        <input type="radio" name="gender" value="other" required> Other
+      </div>
+      <div class="form-group">
+        <label>Skill:</label>
+        <input type="checkbox" name="skill" value="html"> html
+        <input type="checkbox" name="skill" value="css"> css
+        <input type="checkbox" name="skill" value="JavaScript"> JavaScript
+      </div>
+      <input type="submit" value="Register" onclick="displayData()">
+    </form>
+    <div id="output"></div>
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
